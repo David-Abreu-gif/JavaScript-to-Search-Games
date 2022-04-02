@@ -1,0 +1,72 @@
+/* ---------------------------------Mi Documento */
+body{
+background-image: url(images/background.jpg);
+height: 100vh;
+width: 100vw;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-color: black;
+overflow: hidden;
+padding: 30px;
+}
+/* ---------------------------------Titulo del juego */
+
+#title{
+  color: #e91e63;
+  height: 10%;
+}
+
+/* ---------------------------------Todo el Contenido */
+
+#content{
+  display: flex;
+  width: 100%;
+  height: 90%;
+}
+
+/* ---------------------------------Lado Izquierdo */
+#side_left{
+  width: 50%;
+  padding: 15px;
+  margin: auto;
+}
+
+#myCarousel{
+  margin: auto;
+  width: 100%;
+}
+
+/* ---------------------------------Lado Derecho */
+#side_right{
+  background: #000144ad;
+  color: #00bcd4;
+  width: 50%;
+  word-wrap: break-word;
+  overflow: auto;
+  margin: 15px;
+  padding: 30px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+#side_right u{
+  color: #e91e63;
+}
+
+#side_right h3{
+  font-size: 25px;
+}
+
+/* ----------Scrollbar */
+#side_right::-webkit-scrollbar {
+  width: 10px;
+}
+
+#side_right::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#side_right::-webkit-scrollbar-thumb {
+  background-color: #e91e634d;
+}
+/* ----------Scrollbar */

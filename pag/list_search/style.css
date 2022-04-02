@@ -1,0 +1,153 @@
+/* ---------------------------------Mi Documento */
+body{
+  background-image: url(images/background.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+
+/* ---------------------------------Titulo (En caso de no encontrar) */
+#msj_no_search{
+  display: none;
+  position: absolute;
+}
+
+#msj_no_search h4, h3{
+  color: #e91e63;
+  padding-inline: 30px;
+  margin: 0px;
+  margin-top: 10px;
+}
+
+/* ---------------------------------Contenido */
+#content{
+  height: 100%;
+  width: 100%;
+  overflow-x: scroll;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+/* ----------Scrollbar */
+#content::-webkit-scrollbar {
+  width: 10px;
+}
+
+#content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#content::-webkit-scrollbar-thumb {
+  background-color: #e91e634d;
+}
+/* ----------Scrollbar */
+
+
+/* ---------------------------------Lista de Sugerencias(En caso de no encontrar) */
+#list_available{
+  display: none;
+  list-style: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  justify-content: center;
+}
+
+#list_available li{
+  background: #000144ad;
+  display: flex;
+  width: 200px;
+  height: 35%;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 5px;
+  margin-inline-end: 30px;
+  border-radius: 0px 0px 10px 10px;
+  transition: transform .2s;
+
+}
+
+#list_available li:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  color: #00bcd4
+}
+
+#list_available img{
+  width: 200px;
+  height: 60%;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#list_available h2{
+  color: #e91e63;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  font-size: medium;
+}
+
+/* ---------------------------------Lista de juegos encontrados */
+section{
+  display: block;
+  margin-inline: 15px;
+  filter: grayscale(1);
+  transition: transform .2s;
+}
+section:hover{
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+section img{
+    width: 300px;
+    border-radius: 15px 15px 0px 0px;
+    height: 200px;
+    object-fit: cover;
+}
+
+section h2{
+  color: #e91e63;
+}
+
+section h4{
+  color: #00bcd4;
+}
+section .score{
+  color: #ffeb3b;
+}
+
+
+.info_game{
+  width: 300px;
+  background: #000144ad;
+  border-radius: 0px 0px 15px 15px;
+  padding: 15px;
+  height: 230px;
+  overflow: auto;
+  overflow-wrap: break-word;
+}
+
+/* ----------Scrollbar */
+.info_game::-webkit-scrollbar {
+width: 10px;
+}
+
+.info_game::-webkit-scrollbar-track {
+background: transparent;
+}
+
+.info_game::-webkit-scrollbar-thumb {
+background-color: #e91e634d;
+}
+/* ----------Scrollbar */

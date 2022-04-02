@@ -1,0 +1,189 @@
+/* ---------------------------------Mi Documento */
+body{
+background-image: url(images/background.jpg);
+height: 100vh;
+width: 100vw;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-color: black;
+overflow: hidden;
+}
+
+/* ---------------------------------Menu de Navegación */
+
+nav{
+  position: absolute;
+  z-index: 1;
+  display: none;
+  top: 20px;
+  left: 50px;
+}
+nav button{
+  width: 130px;
+  height: 40px;
+  border: 2px solid #8b133c;
+  background: transparent;
+  color: #e91e63;
+  font-weight: 600;
+  border-radius: 10px 10px 10px 10px;
+  margin-right: 10px;
+  box-shadow: inset 0px 0px 10px 0px #8b133c;
+}
+nav button:hover{
+  background: #00000069;
+}
+
+/* ----------Lista del Boton Categorias */
+#btn_ctg:focus ~ #list_ctg{
+  display: block;
+}
+
+nav #list_ctg{
+  display: none;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav ul{
+  position: absolute;
+  margin-top: 20px;
+  background: #000144ad;
+  height: 200px;
+  width: 200px;
+  overflow: auto;
+  border-radius: 5px 5px 5px 5px;
+  padding: 0px;
+  box-shadow: -5px 6px 20px 0px #000000;
+}
+
+/* ----------Scrollbar */
+nav ul::-webkit-scrollbar {
+width: 10px;
+}
+
+nav ul::-webkit-scrollbar-track {
+background: transparent;
+}
+
+nav ul::-webkit-scrollbar-thumb {
+background-color: #8b133c;
+}
+/* ----------Scrollbar */
+
+
+nav li{
+  margin: 1px;
+  padding: 10px;
+  list-style: none;
+}
+
+nav li:hover{
+  background: #00000070;
+}
+
+nav a{
+  text-decoration: none;
+  color: #e91e63;
+}
+
+/* ---------------------------------Todo mi Contenido */
+#content{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+/* ---------------------------------Lado Izquierdo */
+#side_left{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#side_left h1{
+color: #e91e63;
+}
+
+#side_left h2{
+  color: #3f51b5;
+}
+
+#input_button{
+display: flex;
+width: 100%;
+}
+
+#input_game{
+  width: 15em;
+  margin: 5px;
+}
+
+/* ----------Lista de Sugerencias de busqueda */
+
+#ui-id-1{
+  background: #000144ad;
+  list-style: none;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  width: 200px;
+  max-height: 75px;
+  overflow: hidden;
+}
+
+#ui-id-1 li{
+  color: white;
+}
+
+#button_game{
+  margin: 5px;
+}
+
+/* ---------------------------------Lado Derecho */
+
+#side_right{
+margin: auto;
+display: none;
+}
+
+#side_right img{
+  margin: auto;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#info_game{
+padding: 15px;
+width: 365px;
+background: #795548b0;
+height: 200px;
+border-radius: 0px 0px 25px 25px;
+}
+
+#info_game h2{
+  color: #e91e63;
+  text-align: center;
+  margin: 0px;
+  height: 20%;
+  white-space: nowrap;
+}
+
+#info_game h4{
+  color: #3f51b5;
+  margin: 0px;
+  height: 20%;
+}
+
+#info_game p{
+  color: white;
+  height: 70px;
+  margin: 0px;
+  height: 40%;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
